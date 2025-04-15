@@ -28,6 +28,8 @@ app.use(morgan(function (tokens, req, res) {
   ].join(' - ')
 }))
 
+app.get('/api/test', (req, res) => res.json({ message: 'Backend is running' }));
+
 // Middlewares
 
 const allowedOrigins = [

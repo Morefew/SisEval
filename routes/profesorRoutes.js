@@ -1,7 +1,5 @@
 import express from "express";
 import profesorController from "../controllers/profesorController.js";
-import { query, body, cookie, header } from "express-validator";
-import authMiddleware from "../middleware/authMiddleware.js";
 
 const profesorRouter = new express.Router();
 
@@ -29,7 +27,7 @@ profesorRouter.get("/buscar/?", profesorController.buscarProfesores);
 
 /*
  * Route to score a profesor.
- * @name PUT /api/prof/:id
+ * @name PUT /api/prof/evaluar
  * @function
  * @memberof module:profesorRoutes
  * @inner
