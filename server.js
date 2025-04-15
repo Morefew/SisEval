@@ -32,9 +32,8 @@ app.use(morgan(function (tokens, req, res) {
 
 const allowedOrigins = [
   //  production frontend URL
-  'https://openfullstack-deploy-test.vercel.app',
-  'https://openfullstack-deploy-test-morefews-projects.vercel.app',
-  'https://openfullstack-deploy-test-git-main-morefews-projects.vercel.app/',
+  'https://sis-eval.vercel.app',
+  'https://sis-eval-morefews-projects.vercel.app',
   'http://localhost:5173',
   'http://localhost:5000',
   'http://localhost:5001',
@@ -56,7 +55,7 @@ app.use(cors(
 
       // Allow Vercel preview URLs
       if (normalizedOrigin.match(
-        /^https:\/\/openfullstack-deploy-test-[a-z0-9]+-morefews-projects\.vercel\.app$/)
+        /^https:\/\/sis-eval-[a-z0-9]+-morefews-projects\.vercel\.app$/)
       ) {
         return callback(null, true);
       }
