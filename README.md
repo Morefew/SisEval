@@ -10,6 +10,8 @@ El **Sistema de Evaluaciones de Profesores** es una plataforma diseñada para ev
 - **Búsqueda de Profesores**: Permite buscar profesores por nombre, materia o carrera.
 - **Visualización de Resultados**: Muestra el promedio de evaluaciones y detalles de cada profesor.
 
+## Aplicación en vivo:
+- Para probar la aplicación accede a [SisEval](https://sis-eval.vercel.app/).
 
 ## Tecnologías Utilizadas
 - **Backend**: Node.js, Express.js
